@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Off-Canvas Sidebar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .leftSlider{
+            transition: 0.5s;
+            width: 45%;
+            position: fixed;
+            top: 0;
+            left: -45%;
+        }
+        .comeOut{
+            left: 0;
+        }
+    </style>
+</head><body>
+<!-- START -->
+    
+<h1 class="text-center m-4 text-3xl underline">
+    Off-Canvas
+    <br>
+    Sidebar
+</h1>
+
+<!-- left button -->
+<img src="football.png" alt="football" class="h-40 mx-auto my-5 mt-10">
+<button id="leftBtn" class="w-20 mx-auto block p-1 rounded-sm text-white shadow-lg cursor-pointer bg-blue-600 hover:bg-blue-700">
+    FootBall
+</button>
+
+
+<!-- left off-canvas -->
+<div class="leftSlider bg-yellow-300 p-3 h-screen">
+
+    <h2 class="text-center text-xl underline mb-3">
+        FOOTBALL
+    </h2>
+
+    <p class="text-center">
+        Football, a global passion, unites fans worldwide. From grassroots to elite levels, it fosters camaraderie and competition. Its allure lies in teamwork, skill, and the thrill of victory. Stadiums echo with cheers, as players strive for glory on the pitch.
+    </p>
+
+    <img src="football.png" alt="Football" class="h-40 mx-auto my-3">
+
+    <div class="flex justify-center items-center mb-5">
+        <ul>
+            <li>• <i>Players:</i> 11 each</li>
+            <li>• <i>Origin:</i> England</li>
+            <li>• <i>Duration:</i> 90 min</li>
+        </ul>
+    </div>
+
+    <a href="https://en.wikipedia.org/wiki/Football" target="_blank" class="text-blue-800 underline"  style="word-wrap: break-word;">
+        <div class="text-center">
+            https://en.wikipedia.org/wiki/Football
+        </div>
+    </a>
+
+    <br>
+
+    <a href="https://en.wikipedia.org/wiki/Association_football" target="_blank" class="text-blue-800 underline"  style="word-wrap: break-word;">
+        <div class="text-center">
+            https://en.wikipedia.org/wiki/Association_football
+        </div>
+    </a>
+
+</div>
+
+
+<!-- END -->
+<script src="script.js"></script>
+</body></html>
